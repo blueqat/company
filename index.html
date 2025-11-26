@@ -59,19 +59,33 @@
                 <a href="#contact" class="text-gray-700 hover:text-gray-900 transition duration-150">お問い合わせ</a>
             </div>
 
+            <!-- Language Switch -->
+            <div class="hidden md:flex space-x-4 text-sm font-medium tracking-wider">
+                <span class="text-gray-900">JP</span>
+                <a href="/en" class="text-gray-500 hover:text-gray-900 transition">EN</a>
+            </div>
+
             <!-- モバイルメニューボタン -->
             <button id="mobile-menu-button" class="md:hidden p-2 text-gray-800 hover:bg-gray-50 transition duration-150">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </nav>
 
-        <!-- モバイルメニュー (非表示) -->
+        <!-- Mobile Menu (JP version) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-gray-100">
-            <!-- リンクのアンカーとテキストを更新 -->
-            <a href="#service" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150 border-b border-gray-100">サービス</a>
-            <a href="#company" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150 border-b border-gray-100">企業概要</a>
-            <a href="#contact" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">お問い合わせ</a>
+
+            <a href="#service" class="block py-3 px-6 border-b border-gray-100">サービス</a>
+            <a href="#company" class="block py-3 px-6 border-b border-gray-100">企業概要</a>
+            <a href="#contact" class="block py-3 px-6">お問い合わせ</a>
+
+            <!-- Language Switch -->
+            <div class="py-3 px-6 border-t border-gray-100 flex space-x-4 text-sm font-medium tracking-wider">
+                <span class="text-gray-900">JP</span>
+                <a href="/en" class="text-gray-500 hover:text-gray-900">EN</a>
+            </div>
+
         </div>
+
     </header>
 
     <main class="mt-16">

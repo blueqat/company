@@ -34,7 +34,6 @@
 
 <body class="overflow-x-hidden">
 
-    <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-16">
             <a href="" class="text-2xl font-bold tracking-widest text-gray-900">
@@ -44,220 +43,154 @@
             
             <div class="hidden md:flex space-x-6 text-sm font-medium tracking-wider">
                 <a href="#service" class="text-gray-700 hover:text-gray-900 transition duration-150">Service</a>
+                <a href="#media" class="text-gray-700 hover:text-gray-900 transition duration-150">Media</a>
                 <a href="#company" class="text-gray-700 hover:text-gray-900 transition duration-150">Company</a>
                 <a href="#contact" class="text-gray-700 hover:text-gray-900 transition duration-150">Contact</a>
             </div>
 
-            <div class="hidden flex space-x-4 text-sm font-medium tracking-wider">
-                <span class="text-gray-900">JP</span>
-                <a href="/en" class="text-gray-500 hover:text-gray-900 transition">EN</a>
+            <div class="hidden md:flex space-x-4 text-sm font-medium tracking-wider">
+                <a href="/" class="text-gray-500 hover:text-gray-900 transition">JP</a>
+                <span class="text-gray-900">EN</span>
             </div>
 
             <button id="mobile-menu-button" class="md:hidden p-2 text-gray-800 hover:bg-gray-50 transition duration-150">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </nav>
 
-        <!-- Mobile Menu (EN version) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-gray-100">
-
             <a href="#service" class="block py-3 px-6 border-b border-gray-100">Service</a>
+            <a href="#media" class="block py-3 px-6 border-b border-gray-100">Media</a>
             <a href="#company" class="block py-3 px-6 border-b border-gray-100">Company</a>
             <a href="#contact" class="block py-3 px-6">Contact</a>
-
-            <!-- Language Switch -->
             <div class="py-3 px-6 border-t border-gray-100 flex space-x-4 text-sm font-medium tracking-wider">
                 <a href="/" class="text-gray-500 hover:text-gray-900">JP</a>
                 <span class="text-gray-900">EN</span>
             </div>
-
         </div>
-
     </header>
 
     <main class="mt-16">
 
-        <!-- Hero Section -->
         <section id="hero" class="relative min-h-screen flex items-center justify-center p-4 sm:p-8">
             <div class="absolute inset-0 bg-gray-50/50 -z-10">
-                <div class="w-full h-full bg-cover bg-center opacity-80"
-                     style="background-image: url('./bg.png');"></div>
+                <div class="w-full h-full bg-cover bg-center opacity-80" style="background-image: url('./bg.png');"></div>
             </div>
-
             <div class="text-center max-w-5xl z-10 pt-20 pb-10">
-                <p class="text-xl sm:text-2xl font-medium text-white mb-4 tracking-widest">
-                    QUANTUM COMPUTING
-                </p>
+                <p class="text-xl sm:text-2xl font-medium text-white mb-4 tracking-widest">QUANTUM COMPUTING</p>
                 <h1 class="text-3xl sm:text-4xl lg:text-[5rem] font-extrabold minimal-title mb-8 leading-none text-white">
                     <span class="font-light">Solving Problems Beyond Human Reach</span>
                 </h1>
             </div>
         </section>
 
-        <!-- SERVICE Section -->
         <section id="service" class="py-24 lg:py-32">
             <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-4xl">
-                <h2 class="text-4xl sm:text-5xl font-extrabold minimal-title mb-20 text-center text-gray-900">SERVICE</h2>
+                <h2 class="text-4xl sm:text-5xl font-extrabold minimal-title mb-20 text-center text-gray-900 uppercase">Service</h2>
 
-                <!-- 01 SOFTWARE -->
                 <div class="grid md:grid-cols-2 gap-10 mb-20 items-start border-b border-gray-100 pb-10">
                     <div class="aspect-video bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center">
-                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
+                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </div>
                     <div class="md:pt-4">
                         <p class="text-sm font-medium text-gray-500 mb-2 tracking-widest uppercase">01 / SOFTWARE</p>
                         <h3 class="text-3xl font-bold text-gray-900 mb-3">Blueqat SDK</h3>
-                        <p class="text-lg text-gray-700 font-light mb-4">
-                            A Python-based SDK that enables intuitive construction of quantum circuits. 
-                            Built-in high-speed simulators reduce development barriers and support everything 
-                            from rapid prototyping to large-scale simulations.
-                        </p>
+                        <p class="text-lg text-gray-700 font-light">A Python-based SDK that enables intuitive construction of quantum circuits. Built-in high-speed simulators support everything from rapid prototyping to large-scale simulations.</p>
                     </div>
                 </div>
 
-                <!-- 02 PLATFORM -->
                 <div class="grid md:grid-cols-2 gap-10 mb-20 items-start border-b border-gray-100 pb-10">
                     <div class="md:order-2 aspect-video bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center">
-                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                  d="M5 12h14M5 12a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v3a2 2 0 01-2 2M5 12a2 2 0 00-2 2v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
-                        </svg>
+                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M5 12a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v3a2 2 0 01-2 2M5 12a2 2 0 00-2 2v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
                     </div>
                     <div class="md:order-1 md:pt-4">
                         <p class="text-sm font-medium text-gray-500 mb-2 tracking-widest uppercase">02 / PLATFORM</p>
                         <h3 class="text-3xl font-bold text-gray-900 mb-3">Cloud Access & Execution Environment</h3>
-                        <p class="text-lg text-gray-700 font-light mb-4">
-                            Connect effortlessly to quantum hardware and high-performance computing resources worldwide 
-                            through a unified interface. Our secure execution platform enables large-scale computation 
-                            and collaborative research.
-                        </p>
+                        <p class="text-lg text-gray-700 font-light">Connect effortlessly to quantum hardware worldwide through a unified interface. Our secure platform enables large-scale computation and collaborative research.</p>
                     </div>
                 </div>
 
-                <!-- 03 HARDWARE R&D -->
                 <div class="grid md:grid-cols-2 gap-10 mb-20 items-start border-b border-gray-100 pb-10">
                     <div class="aspect-video bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center">
-                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.163 3.018A3 3 0 0115.42 10.5h0C17.785 10.5 19 12.18 19 14s-1.215 3.5-3.58 3.5h0A3 3 0 0113 21m-3-18v2m0 16v2m-2-8h2m16 0h2"></path>
-                        </svg>
+                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.163 3.018A3 3 0 0115.42 10.5h0C17.785 10.5 19 12.18 19 14s-1.215 3.5-3.58 3.5h0A3 3 0 0113 21m-3-18v2m0 16v2m-2-8h2m16 0h2"></path></svg>
                     </div>
                     <div class="md:pt-4">
                         <p class="text-sm font-medium text-gray-500 mb-2 tracking-widest uppercase">03 / HARDWARE R&D</p>
                         <h3 class="text-3xl font-bold text-gray-900 mb-3">Semiconductor Quantum Computer</h3>
-                        <p class="text-lg text-gray-700 font-light mb-4">
-                            We drive R&D toward next-generation semiconductor-based quantum hardware, aiming to realize 
-                            low-power, highly stable, and innovative quantum chips.
-                        </p>
+                        <p class="text-lg text-gray-700 font-light">We drive R&D toward next-generation semiconductor-based quantum hardware, aiming for low-power and highly stable quantum chips.</p>
                     </div>
                 </div>
 
-                <!-- 04 APPLICATION -->
                 <div class="grid md:grid-cols-2 gap-10 items-start pb-10">
                     <div class="md:order-2 aspect-video bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center">
-                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                  d="M16 8v8m-4-5v5m-4-2v2m-2-5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2z"></path>
-                        </svg>
+                        <svg class="w-16 h-16 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 8v8m-4-5v5m-4-2v2m-2-5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2z"></path></svg>
                     </div>
                     <div class="md:order-1 md:pt-4">
                         <p class="text-sm font-medium text-gray-500 mb-2 tracking-widest uppercase">04 / APPLICATION</p>
                         <h3 class="text-3xl font-bold text-gray-900 mb-3">Financial & Marketing Applications</h3>
-                        <p class="text-lg text-gray-700 font-light mb-4">
-                            We develop custom applications for financial optimization and marketing analytics by 
-                            leveraging quantum-inspired algorithms and advanced computational techniques.
-                        </p>
+                        <p class="text-lg text-gray-700 font-light">Custom application development for financial optimization and marketing analytics leveraging quantum-inspired algorithms.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- COMPANY Section -->
+        <section id="media" class="py-24 lg:py-32 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-12">
+                <h2 class="text-4xl sm:text-5xl font-extrabold minimal-title mb-16 text-center text-gray-900 uppercase">Media</h2>
+                <div id="video-list-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    </div>
+            </div>
+        </section>
+
         <section id="company" class="py-24 lg:py-32 bg-gray-50 border-y border-gray-100">
             <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-4xl">
-                <h2 class="text-3xl sm:text-5xl font-extrabold minimal-title mb-16 text-center text-gray-900">
-                    Company
-                </h2>
-
+                <h2 class="text-3xl sm:text-5xl font-extrabold minimal-title mb-16 text-center text-gray-900 uppercase">Company</h2>
                 <div class="bg-white p-6 sm:p-10 rounded-lg border border-gray-200">
                     <dl class="divide-y divide-gray-100 text-left">
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>Company Name</dt>
                             <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">blueqat Inc.</dd>
                         </div>
-
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>Established</dt>
                             <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">December 12, 2008</dd>
                         </div>
-
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>Capital</dt>
-                            <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">263.1 million yen</dd>
+                            <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">263.1 million yen (incl. Capital Reserve 94.98 million yen)</dd>
                         </div>
-
-                        <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
-                            <dt>(Capital Reserve)</dt>
-                            <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">94.98605 million yen</dd>
-                        </div>
-
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>Address</dt>
                             <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">39F, 2-24-12 Shibuya, Shibuya-ku, Tokyo 150-0002</dd>
                         </div>
-
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>CEO</dt>
                             <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">Yuichiro Minato</dd>
                         </div>
-
                         <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-4 company-detail">
                             <dt>Business</dt>
-                            <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">
-                                Research, development, and solutions related to quantum computing technologies.
-                            </dd>
+                            <dd class="mt-1 font-light text-gray-900 sm:mt-0 sm:col-span-2">Research, development, and solutions related to quantum computing technologies.</dd>
                         </div>
                     </dl>
-                </div>
-
-                <div class="text-center mt-12">
-                    <p class="text-xl text-gray-700 font-light mb-6 leading-relaxed">
-                        Our mission is to transform complex quantum computing technology into simple, powerful tools 
-                        that solve real-world challenges. We are your trusted partner for accelerating innovation.
-                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT Section -->
         <section id="contact" class="py-24 lg:py-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-2xl">
-                <h2 class="text-4xl sm:text-5xl font-extrabold minimal-title mb-16 text-center text-gray-900">
-                    CONTACT
-                </h2>
-
-                <p class="text-center text-lg text-gray-700 font-medium mb-10">
-                    For business inquiries, please contact us at  
-                    <a href="mailto:info@blueqat.co.jp" class="border-b border-gray-900 hover:border-gray-500 text-gray-900">
-                        info@blueqat.co.jp
-                    </a>.
+            <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-2xl text-center">
+                <h2 class="text-4xl sm:text-5xl font-extrabold minimal-title mb-16 text-gray-900 uppercase">Contact</h2>
+                <p class="text-lg text-gray-700 font-medium">
+                    For business inquiries, please contact us at <br class="sm:hidden"><a href="mailto:info@blueqat.co.jp" class="border-b border-gray-900 hover:border-gray-500 text-gray-900 transition duration-300">info@blueqat.co.jp</a>.
                 </p>
-
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white py-10 border-t border-gray-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-12 text-center">
-            <img src="./logo.png" alt="blueqat Logo" class="footer-logo mx-auto mb-3"
-                 onerror="this.onerror=null; this.src='https://placehold.co/150x32/ffffff/333333?text=BLUEQAT';" />
+            <img src="./logo.png" alt="blueqat Logo" class="footer-logo mx-auto mb-3" onerror="this.onerror=null; this.src='https://placehold.co/150x32/ffffff/333333?text=BLUEQAT';" />
             <p class="text-gray-400 text-sm tracking-wide">&copy; <span id="current-year"></span> blueqat. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
@@ -265,16 +198,25 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('current-year').textContent = new Date().getFullYear();
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
+
+            // Load Video List from JSON
+            const videoContainer = document.getElementById('video-list-container');
+            fetch('list.json')
+                .then(res => res.json())
+                .then(data => {
+                    data.forEach(video => {
+                        const div = document.createElement('div');
+                        div.className = "aspect-video w-full overflow-hidden rounded-lg shadow-sm bg-gray-100";
+                        div.innerHTML = `<iframe class="w-full h-full" src="https://www.youtube.com/embed/${video.id}" frameborder="0" allowfullscreen></iframe>`;
+                        videoContainer.appendChild(div);
+                    });
+                })
+                .catch(err => console.error('JSON Load Error:', err));
+
+            // Mobile Menu
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
         });
     </script>
 </body>
